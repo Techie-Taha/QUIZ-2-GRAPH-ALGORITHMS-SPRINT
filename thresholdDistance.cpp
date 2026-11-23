@@ -22,7 +22,7 @@ public:
         for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
                 if (distance[i][k] + distance[k][j] < distance[i][j]){
-                    distance[i][k] = distance[i][k] + distance[k][j];
+                    distance[i][j] = distance[i][k] + distance[k][j];
                 }
             }
         }
